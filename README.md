@@ -19,9 +19,9 @@
                         learning_rate=0.1,lambd=0.2,keep_prop=0.9,beta=0.9,batch_size=64)    
         '''
 3. Then call fit function and feed it with input and output (hot encoded)
-   * '''
+   *  '''
       loss=net.fit(X,y_hot) fit function returns losses you can plot it
-     '''
+      '''
 
 plt.plot(loss)
 Show the plot
