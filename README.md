@@ -1,4 +1,4 @@
-# Artificial_Neural_Network_Library_using_NumPy
+# Artificial_Neural_Network_Library_using_NumPy from scratch 
 ## how to use ANN.py to create Artificial_Neural_Network 
 
 1. first choose network layers and neurons per layer from input unit to output unit 
@@ -12,7 +12,7 @@
    *  Lambd, for L2 regularziation 
    *  Keep_prop for dropout
    *  Beta for optimizer ='momentum' 
-   *  Batch_size=64
+   *  Batch_size  for minibatch 
    *    Example: 
         ```
         net=ANN(network,iteration=300,optimizer='adam',regularization='L2',activation_function='relu',
@@ -21,10 +21,13 @@
         
 3. Then call fit function and feed it with input and output (hot encoded)
    *  ```
-      loss=net.fit(X,y_hot) fit function returns losses you can plot it
+      loss=net.fit(X,y_hot) #fit function returns losses you can plot it
       ```
+4. you can use to check training acuracy 
+   ```
+   net.predict(X,y)
+   ```
 
-plt.plot(loss)
-Show the plot
-plt.show
+
+
 
