@@ -24,10 +24,14 @@
       loss=net.fit(X,y_hot) #fit function returns losses you can plot it
       ```
 4. you can use to check training acuracy 
-   ```
+   * ```
    net.predict(X,y)
    ```
 
-
+5. to make prediction use 
+   *
+    ``` 
+    scores,zs = net.forward_prop(X) # scores[-1] is the softmax output unit
+    ```
 
 
